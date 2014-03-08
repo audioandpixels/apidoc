@@ -4,7 +4,7 @@
 	<title>apiDoc</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<link href="//fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:400,600,700" rel="stylesheet" type="text/css">
+	<link href="fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:400,600,700" rel="stylesheet" type="text/css">
 	<link href="vendor/bootstrap.min.css" rel="stylesheet" media="screen">
 	<link href="vendor/prettify.css" rel="stylesheet" media="screen">
 	<link href="css/style.css" rel="stylesheet" media="screen">
@@ -38,7 +38,7 @@
 			<button id="version" class="btn btn-large dropdown-toggle" data-toggle="dropdown">
 				<strong>{{version}}</strong> <span class="caret"></span>
 			</button>
-			<ul id="versions" class="dropdown-menu">
+			<ul id="versions" class="dropdown-menu pull-right">
 					<li><a id="compareAllWithPredecessor" href="#">{{__ "Compare all with predecessor"}}</a></li>
 					<li class="divider"></li>
 					<li class="disabled"><a href="#">{{__ "show up to version:"}}</a></li>
@@ -84,7 +84,7 @@
 				<button class="version btn dropdown-toggle" data-toggle="dropdown">
 					<strong>{{article.version}}</strong> <span class="caret"></span>
 				</button>
-				<ul class="versions dropdown-menu">
+				<ul class="versions dropdown-menu pull-right">
 					<li class="disabled"><a href="#">{{__ "compare changes to:"}}</a></li>
 	{{#each versions}}
 					<li class="version"><a href="#">{{this}}</a></li>
